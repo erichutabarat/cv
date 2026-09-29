@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1784790231.28943 "/home/ericdaniel/Desktop/Projects/CV/cv.tex" "cv.pdf" "cv" 1784790231.77337 0
+["pdflatex"] 1790666791.4894 "/home/ericdaniel/Desktop/Projects/CV/cv.tex" "cv.pdf" "cv" 1790666792.03841 0
   "/etc/texmf/web2c/texmf.cnf" 1784782477.0045 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ericdaniel/Desktop/Projects/CV/cv.tex" 1784790231.09924 5147 e7ff567def453cf6aa7679f3930d58e8 ""
+  "/home/ericdaniel/Desktop/Projects/CV/cv.tex" 1790666790.70254 5965 2153a6a1aca2f3964f872954f814c7d9 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
@@ -17,6 +17,7 @@
   "/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty" 1576878844 5412 d5a2436094cd7be85769db90f29250a6 ""
   "/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty" 1701727651 17865 1a9bd36b4f98178fa551aca822290953 ""
   "/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty" 1576015897 19007 15924f7228aca6c6d184b115f4baa231 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex" 1353199370 216747 92ec6cf8e39216b4894417b5aa6f057a ""
   "/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty" 1593379760 20089 80423eac55aa175305d35b49e04fe23b ""
   "/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty" 1576624663 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
   "/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty" 1576191570 19336 ce7ae9438967282886b3b036cfad1e4d ""
@@ -25,6 +26,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty" 1705352648 3045 273c666a54e60b9f730964f431a56c1b ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1705352648 2462 6bc53756156dbd71c1ad550d30a3b93f ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty" 1705352648 5119 a04a8b68ab4f6ce800a41f7f8012a10e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty" 1705352648 5048 425739d70251273bf93e3d51f3c40048 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo" 1705352648 8464 59874a3b0776c73e2a138b025d8473dd ""
   "/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
@@ -66,9 +68,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1784785698.12648 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1784785704 6800788 d977bb5fd3c4bde2aa8c1a33f796a688 ""
-  "cv.aux" 1784790231.71616 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "cv.out" 1784790231.6905 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.tex" 1784790231.09924 5147 e7ff567def453cf6aa7679f3930d58e8 ""
+  "cv.aux" 1790666791.97151 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "cv.out" 1790666791.94552 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv.tex" 1790666790.70254 5965 2153a6a1aca2f3964f872954f814c7d9 ""
   (generated)
   "cv.aux"
   "cv.log"
