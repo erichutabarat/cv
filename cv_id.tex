@@ -1,0 +1,210 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Page setup ----------
+\usepackage[margin=0.7in]{geometry}
+
+% ---------- Fonts & ATS-friendly text extraction ----------
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% ---------- Colors & Icons ----------
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{muted}{HTML}{4A4A4A}
+
+% ---------- Links ----------
+\usepackage[colorlinks=true,urlcolor=accent,linkcolor=accent]{hyperref}
+
+% ---------- Lists ----------
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=3pt, parsep=0pt}
+
+% ---------- Section style settings ----------
+\newcommand{\secfontsize}{14}
+\newcommand{\seclineheight}{1.2pt}
+\newcommand{\secgapabove}{14pt}
+\newcommand{\secgaptitle}{6pt}
+\newcommand{\secgapbelow}{10pt}
+\newcommand{\company}[1]{\textbf{\textcolor{accent}{#1}}}
+
+% ---------- Section style with separator line ----------
+\newcommand{\cvsection}[1]{%
+    \par\vspace{\secgapabove}%
+    {\fontsize{\secfontsize}{\numexpr\secfontsize+3\relax}\selectfont\bfseries\scshape #1}\par
+    \vspace{\secgaptitle}%
+    {\color{black}\hrule height \seclineheight}%
+    \vspace{\secgapbelow}%
+    \noindent\ignorespaces
+}
+
+\newcommand{\techstack}[1]{{\small\color{muted}#1}}
+
+% ---------- Misc ----------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedbottom
+
+\begin{document}
+
+%====================
+% Header
+%====================
+\noindent
+{\fontsize{22}{30}\selectfont\bfseries\color{black} Eric Daniel Hutabarat, S.Kom.}\\[4pt]
+{\Large\bfseries\color{muted} Pengembang Fullstack \textcolor{accent}{|} Pengembang Mobile}\\[7pt]
+{\small
+\textcolor{accent}{\faEnvelope}\hspace{4pt}\href{mailto:ericdaniel.dev@gmail.com}{ericdaniel.dev@gmail.com}
+\hspace{16pt}
+\textcolor{accent}{\faGithub}\hspace{4pt}\href{https://github.com/erichutabarat}{github.com/erichutabarat}
+\hspace{16pt}
+\textcolor{accent}{\faLinkedin}\hspace{4pt}\href{https://www.linkedin.com/in/eric-daniel-hutabarat-18192a29a/}{linkedin.com/in/eric-daniel-hutabarat}
+}\\[6pt]
+{\color{black}\rule{\linewidth}{1.4pt}}
+
+%====================
+\cvsection{RINGKASAN PROFESIONAL}
+%====================
+Software Engineer dengan keahlian di bidang pengembangan web full-stack, rekayasa backend, dan deployment cloud. Mampu mengembangkan REST API berkinerja tinggi dengan Go, membangun antarmuka pengguna yang responsif dengan Next.js, serta men-deploy aplikasi berbasis kontainer menggunakan Docker dan VPS Linux. Memadukan latar belakang akademik yang kuat di bidang Teknik Informatika dengan pengalaman proyek dan magang secara praktis.
+
+%====================
+\cvsection{KEAHLIAN TEKNIS}
+%====================
+\newcommand{\skillitem}[2]{{\bfseries\color{black}#1:} #2\par\vspace{6pt}}
+
+\noindent
+\begin{minipage}[t]{0.48\linewidth}\raggedright
+\skillitem{Bahasa Pemrograman}{Go, JavaScript, TypeScript, Dart, Python, SQL}
+\skillitem{Frontend}{Next.js, ReactJS, Flutter, Tailwind CSS, NiceGUI}
+\skillitem{Backend}{Go Gin, Express.js, FastAPI, Prisma ORM, GORM}
+\skillitem{Basis Data}{MySQL, PostgreSQL, Firebase, Supabase}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}\raggedright
+\skillitem{DevOps}{Docker, Docker Compose, Linux, Nginx, GitHub Actions}
+\skillitem{Pengujian}{Jest, Postman, Go testing}
+\skillitem{Perangkat}{Git, GitHub, Figma, VS Code, Postman}
+\skillitem{IoT}{ESP32, MQTT}
+\end{minipage}
+
+%====================
+\cvsection{PENGALAMAN PROFESIONAL}
+%====================
+
+\textbf{Pengembang Web Full-Stack (Magang)}
+\hfill
+Juni 2024 -- Agustus 2024 \\
+\company{Dinas Perkebunan dan Peternakan Provinsi Sumatera Utara - Medan}
+\begin{itemize}
+\item Mengembangkan aplikasi web menggunakan Next.js dan Supabase untuk mengumpulkan, mengelola, dan menganalisis tanggapan survei dari para tamu.
+\item Merancang dan mengimplementasikan antarmuka pengguna yang responsif serta skema basis data untuk pengumpulan data yang lancar dan pembaruan secara real-time.
+\end{itemize}
+
+\vspace{8pt}
+
+\textbf{Pengembang Backend \& Pengembang Aplikasi Mobile}
+\hfill
+Februari 2025 -- Juni 2026 \\
+\company{Biomedis, ITERA - Lampung}
+\begin{itemize}
+    \item Mengembangkan sistem "Deteksi Cemas", dengan mengimplementasikan aplikasi mobile lintas platform menggunakan Flutter dan Dart untuk interaksi pengguna dan pemantauan secara real-time.
+    \item Membangun API backend yang skalabel menggunakan Go dengan Gin dan GORM, serta mengintegrasikan broker Mosquitto MQTT untuk penerimaan data telemetri perangkat keras secara langsung.
+    \item Merancang dan mengoptimalkan skema basis data relasional di MySQL untuk mengelola autentikasi pengguna, log data sensor, dan metrik asesmen secara aman.
+    \item Mengemas layanan backend, basis data, dan broker MQTT ke dalam kontainer menggunakan Docker dan Docker Compose guna memastikan deployment yang andal dan konsistensi lingkungan.
+\end{itemize}
+
+\vspace{8pt}
+
+\textbf{Pengembang GUI Python}
+\hfill
+Maret 2025 -- Mei 2025 \\
+\company{RTK-GPS, Remote}
+\begin{itemize}
+\item Mengembangkan dasbor pemantauan berbasis web dengan Python menggunakan NiceGUI untuk mesin penyortir hasil panen pertanian yang sudah ada, dengan fokus hanya pada lapisan antarmuka pengguna.
+\item Membangun tampilan real-time untuk statistik mesin (jumlah hasil panen, waktu operasi, efisiensi), indikator status komponen (penyortir, komputer, kamera, mesin) dengan deteksi masalah otomatis, serta grafik Plotly interaktif.
+\item Mengintegrasikan siaran langsung kamera dari perangkat edge (Jetson) dan menyediakan endpoint REST FastAPI untuk menyajikan data dasbor.
+\item Merancang tata letak responsif dengan kelas Tailwind CSS dan menstrukturkan aplikasi dengan modul controller dan layout yang terpisah agar lebih mudah dipelihara.
+\end{itemize}
+
+\vspace{8pt}
+
+%====================
+\cvsection{PROYEK}
+%====================
+\textbf{Deteksi Cemas -- Aplikasi Mobile Deteksi Tingkat Kecemasan}\\[2pt]
+\techstack{Flutter, Go Gin, MySQL, Docker}
+\begin{itemize}
+\item Mengembangkan aplikasi mobile untuk mendeteksi tingkat kecemasan menggunakan Flutter, dengan layanan backend yang dibangun menggunakan Golang Gin dan integrasi basis data MySQL.
+\item Mengintegrasikan perangkat IoT dan model machine learning yang dikembangkan oleh anggota tim untuk mengumpulkan data fisiologis dan menyediakan analisis tingkat kecemasan.
+\item Mengemas layanan backend menggunakan Docker untuk meningkatkan konsistensi deployment dan skalabilitas aplikasi.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{MySDLC -- Platform Manajemen Siklus Hidup Pengembangan Perangkat Lunak}\\[2pt]
+\techstack{Next.js, Go, GORM, MySQL, Docker Compose}
+\begin{itemize}
+\item Membangun platform manajemen proyek menggunakan Next.js, Go, GORM, dan MySQL.
+\item Mengimplementasikan pelacakan proyek, fase SDLC, kolaborasi tim, dan kontrol akses berbasis peran (role-based access control).
+\item Men-deploy aplikasi menggunakan Docker Compose dengan build kontainer otomatis.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{Sistem Pemantauan IoT Automatic Transfer Switch}\\[2pt]
+\techstack{ESP32, MQTT, Firebase, PostgreSQL}
+\begin{itemize}
+\item Mengembangkan sistem pemantauan parameter kelistrikan berbasis ESP32.
+\item Mengintegrasikan komunikasi MQTT, Firebase Realtime Database, dan penyimpanan PostgreSQL.
+\item Merancang layanan backend untuk pemantauan real-time dan analisis data historis.
+\end{itemize}
+
+%====================
+\cvsection{PENDIDIKAN}
+%====================
+\textbf{Institut Teknologi Sumatera}
+\hfill
+Agustus 2021 -- November 2026 \\
+\textit{Sarjana Teknik Informatika} \hfill IPK: 3,32 / 4,00
+
+Berfokus pada Rekayasa Frontend, Pengembangan Backend, Manajemen Basis Data, Pengembangan Aplikasi Mobile, Version Control dengan Git, dan Sistem Internet of Things (IoT).
+
+\vspace{6pt}
+
+\textbf{Dicoding -- Pengembangan Frontend dan Backend}
+\hfill
+Februari 2024 -- Juli 2024 \\
+\textit{Studi Mandiri Bersertifikat} \hfill IPK: 4,00 / 4,00
+
+Menyelesaikan pelatihan intensif di bidang Pengembangan Frontend dan Backend, mencakup pengembangan aplikasi web, pemrograman JavaScript, React, layanan backend, dan praktik pengembangan perangkat lunak.
+
+
+%====================
+\cvsection{SERTIFIKASI}
+%====================
+\textbf{Belajar Dasar Git dengan GitHub -- Dicoding}
+\hfill Desember 2024 \\
+Sertifikat: \href{https://www.dicoding.com/certificates/6RPNV0G88Z2M}{Tautan Verifikasi}
+
+\vspace{5pt}
+
+\textbf{Belajar Membuat Front-End Web untuk Pemula -- Dicoding}
+\hfill Desember 2024 \\
+Sertifikat: \href{https://www.dicoding.com/certificates/1OP8N900QXQK}{Tautan Verifikasi}
+
+\vspace{5pt}
+
+\textbf{Belajar Back-End Pemula dengan JavaScript -- Dicoding}
+\hfill Desember 2024 \\
+Sertifikat: \href{https://www.dicoding.com/certificates/1OP8WDO28XQK}{Tautan Verifikasi}
+
+\vspace{5pt}
+
+\textbf{Belajar Pengembangan Web Intermediate -- Dicoding}
+\hfill Desember 2024 \\
+Sertifikat: \href{https://www.dicoding.com/certificates/N9ZOY14GDPG5}{Tautan Verifikasi}
+
+\end{document}
